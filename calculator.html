@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      body {
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(to top left, #28b487, #7dd56f);
+      }
+      /* * {
+        border: 1px solid red;
+      } */
+      main {
+        width: 350px;
+        margin: auto;
+        margin-top: 7%;
+      }
+      .calc-body {
+        padding: 5%;
+        background-color: #e6e4e2;
+        /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+      }
+      .calc-header {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .input {
+        width: 95.4%;
+        height: 60px;
+        padding: 5% 2%;
+        font-size: 50px;
+        border: 2px solid #82d78c;
+      }
+      .input:hover {
+        border: 2px solid #82d78c;
+      }
+      .row {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        flex-direction: row;
+      }
+      .btns {
+        padding: 10%;
+        width: 25%;
+        border: none;
+        font-size: 20px;
+      }
+      .btns:hover {
+        font-size: 17px;
+        opacity: 0.6;
+      }
+      .btns-action {
+        padding: 10%;
+        width: 25%;
+        border: none;
+        font-size: 20px;
+      }
+      .btns-action:hover {
+        font-size: 17px;
+        opacity: 0.6;
+      }
+      .hidden {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="calc-body">
+        <div class="calc-header">
+          <div class="input">
+            <div class="content"></div>
+            <!-- <span class="contents">
+              <span class="number-1 hidden">1</span>
+              <span class="number-2 hidden">2</span>
+              <span class="number-3 hidden">3</span>
+              <span class="number-4 hidden">4</span>
+              <span class="number-5 hidden">5</span>
+              <span class="number-6 hidden">6</span>
+              <span class="number-7 hidden">7</span>
+              <span class="number-8 hidden">8</span>
+            </span> -->
+          </div>
+        </div>
+        <div class="calc-main">
+          <!-- ⫞⇢⇥⇨↪ -->
+          <div class="row">
+            <button type="submit" class="btns-action" id="clear" style="color: #f55600">
+              CL
+            </button>
+            <button type="submit" class="btns-action" id="delete">→</button>
+            <button type="submit" class="btns" id="percentage">%</button>
+            <button type="submit" class="btns" id="divide">/</button>
+          </div>
+          <div class="row">
+            <button type="submit" class="btns" id="seven">7</button>
+            <button type="submit" class="btns" id="eight">8</button>
+            <button type="submit" class="btns" id="nine">9</button>
+            <button type="submit" class="btns" id="multiple">*</button>
+          </div>
+          <div class="row">
+            <button type="submit" class="btns" id="four">4</button>
+            <button type="submit" class="btns" id="five">5</button>
+            <button type="submit" class="btns" id="six">6</button>
+            <button type="submit" class="btns" id="subtract">-</button>
+          </div>
+          <div class="row">
+            <button type="submit" class="btns" id="one">1</button>
+            <button type="submit" class="btns" id="two">2</button>
+            <button type="submit" class="btns" id="three">3</button>
+            <button type="submit" class="btns" id="plus">+</button>
+          </div>
+          <div class="row">
+            <button type="submit" class="btns" id="root">✓</button>
+            <button type="submit" class="btns" id="zero">0</button>
+            <button type="submit" class="btns" id="dot">.</button>
+            <button
+              type="submit"
+              class="btns-action"
+              id="equal"
+              style="background-color: #82d78c; color: white"
+            >
+              =
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="calculator.js"></script>
+  </body>
+</html>
